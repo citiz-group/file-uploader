@@ -11,81 +11,97 @@
 </head>
 
 <body class="h-100 d-flex align-items-center flex-column justify-content-center w-100">
-  <div class="border d-grid p-3 shadow">
-    <h6 id="title"></h6>
-    <p class="mb-0" id="subtitle"></p>
-    <hr>
-    <div class="d-flex justify-content-end mb-3">
-      Documents copropriété :&nbsp;
-      <lr-file-uploader-regular
-        css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
-        ctx-name="/Documents de vente/Documents copropriete/"
-        class="my-config"
-      ></lr-file-uploader-regular>
+  <div>
+    <div class="d-flex align-items-center mb-3">
+      <img class="img-thumbnail mr-3 shadow" src="https://avatars.githubusercontent.com/u/122356874?s=50">
+      <h1>&nbsp;Immocitiz File Uploader</h1>
     </div>
-    <div class="d-flex justify-content-end mb-3">
-      Documents opportunité :&nbsp;
-      <lr-file-uploader-regular
-        css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
-        ctx-name="/Documents de vente/Documents opportunite/"
-        class="my-config"
-      ></lr-file-uploader-regular>
-    </div>
-    <div class="d-flex justify-content-end mb-3">
-      Visuel n°1 :&nbsp;
-      <lr-file-uploader-regular
-        css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
-        ctx-name="/Visuel 1/"
-        class="my-config"
-      ></lr-file-uploader-regular>
-    </div>
-    <div class="d-flex justify-content-end mb-3">
-      Visuel n°2 :&nbsp;
-      <lr-file-uploader-regular
-        css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
-        ctx-name="/Visuel 2/"
-        class="my-config"
-      ></lr-file-uploader-regular>
-    </div>
-    <div class="d-flex justify-content-end mb-3">
-    Visuel n°3 :&nbsp;
-      <lr-file-uploader-regular
-        css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
-        ctx-name="/Visuel 3/"
-        class="my-config"
-      ></lr-file-uploader-regular>
-    </div>
-    <div class="d-flex justify-content-end mb-3">
-      Visuel n°4 :&nbsp;
-      <lr-file-uploader-regular
-        css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
-        ctx-name="/Visuel 4/"
-        class="my-config"
-      ></lr-file-uploader-regular>
-    </div>
-    <div class="d-flex justify-content-end mb-3">
-      Visuel n°5 :&nbsp;
-      <lr-file-uploader-regular
-        css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
-        ctx-name="/Visuel 5/"
-        class="my-config"
-      ></lr-file-uploader-regular>
-    </div>
-    <div class="d-flex justify-content-end mb-3">
-      Visuel n°6 :&nbsp;
-      <lr-file-uploader-regular
-        css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
-        ctx-name="/Visuel 6/"
-        class="my-config"
-      ></lr-file-uploader-regular>
-    </div>
-    <div class="d-flex justify-content-end">
-      Autre :&nbsp;
-      <lr-file-uploader-regular
-        css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
-        ctx-name="/Autre/"
-        class="my-config"
-      ></lr-file-uploader-regular>
+    <div class="border d-grid p-3 shadow">
+      <h6 id="title"></h6>
+      <p class="mb-0" id="subtitle"></p>
+      <hr>
+      <div class="d-flex align-items-center justify-content-end mb-3">
+        <div>Documents copropriété :&nbsp;</div>
+        <div id="documents-copropriete"></div>
+        <lr-file-uploader-regular
+          css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
+          ctx-name="/Documents de vente/Documents copropriete/"
+          class="my-config"
+        ></lr-file-uploader-regular>
+      </div>
+      <div class="d-flex align-items-center justify-content-end">
+        <div>Documents opportunité :&nbsp;</div>
+        <div id="document-opportunite"></div>
+        <lr-file-uploader-regular
+          css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
+          ctx-name="/Documents de vente/Documents opportunite/"
+          class="my-config"
+        ></lr-file-uploader-regular>
+      </div>
+      <hr>
+      <div class="d-flex align-items-center justify-content-end mb-3">
+        <div>Visuel n°1 :&nbsp;</div>
+        <div id="visuel-1"></div>
+        <lr-file-uploader-regular
+          css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
+          ctx-name="/Visuel 1/"
+          class="my-config"
+        ></lr-file-uploader-regular>
+      </div>
+      <div class="d-flex align-items-center justify-content-end mb-3">
+        <div>Visuel n°2 :&nbsp;</div>
+        <div id="visuel-2"></div>
+        <lr-file-uploader-regular
+          css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
+          ctx-name="/Visuel 2/"
+          class="my-config"
+        ></lr-file-uploader-regular>
+      </div>
+      <div class="d-flex align-items-center justify-content-end mb-3">
+        <div>Visuel n°3 :&nbsp;</div>
+        <div id="visuel-3"></div>
+        <lr-file-uploader-regular
+          css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
+          ctx-name="/Visuel 3/"
+          class="my-config"
+        ></lr-file-uploader-regular>
+      </div>
+      <div class="d-flex align-items-center justify-content-end mb-3">
+        <div>Visuel n°4 :&nbsp;</div>
+        <div id="visuel-4"></div>
+        <lr-file-uploader-regular
+          css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
+          ctx-name="/Visuel 4/"
+          class="my-config"
+        ></lr-file-uploader-regular>
+      </div>
+      <div class="d-flex align-items-center justify-content-end mb-3">
+        <div>Visuel n°5 :&nbsp;</div>
+        <div id="visuel-5"></div>
+        <lr-file-uploader-regular
+          css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
+          ctx-name="/Visuel 5/"
+          class="my-config"
+        ></lr-file-uploader-regular>
+      </div>
+      <div class="d-flex align-items-center justify-content-end mb-3">
+        <div>Visuel n°6 :&nbsp;</div>
+        <div id="visuel-6"></div>
+        <lr-file-uploader-regular
+          css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
+          ctx-name="/Visuel 6/"
+          class="my-config"
+        ></lr-file-uploader-regular>
+      </div>
+      <div class="d-flex align-items-center justify-content-end">
+        <div>Autre :&nbsp;</div>
+        <div id="autre"></div>
+        <lr-file-uploader-regular
+          css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
+          ctx-name="/Autre/"
+          class="my-config"
+        ></lr-file-uploader-regular>
+      </div>
     </div>
   </div>
 
@@ -104,8 +120,8 @@
       );
       let responeJson = await response.json();
       product = responeJson.data;
-      document.getElementById("title").innerHTML = product.name;
-      document.getElementById("subtitle").innerHTML =
+      document.getElementById('title').innerHTML = product.name;
+      document.getElementById('subtitle').innerHTML =
         'sourcé par ' +
         product.d2c362a22b4628842cb19563a4fd19337b27189e.name +
         ' le ' +
@@ -176,11 +192,11 @@
       --cfg-multiple: 1;
       --cfg-max-local-file-size-bytes: 10485760;
       --cfg-use-cloud-image-editor: 1;
-      --cfg-source-list: "local, url, camera, dropbox, facebook, gdrive, gphotos, instagram";
+      --cfg-source-list: "local, url, camera, dropbox, gdrive";
       --darkmode: 0;
-      --h-accent: 223;
-      --s-accent: 100%;
-      --l-accent: 61%;
+      --h-accent: 210;
+      --s-accent: 61%;
+      --l-accent: 43%;
     }
   </style>
 </body>
