@@ -10,39 +10,35 @@
   <meta charset="utf-8">
 </head>
 
-<body class="h-100 d-flex align-items-center flex-column p-3 w-100">
+<body class="d-flex align-items-center flex-column p-3 w-100" style="background-color: #eee;">
   <div class="w-75">
     <div class="d-flex align-items-center mb-3">
       <img class="img-thumbnail mr-3 shadow" src="https://avatars.githubusercontent.com/u/122356874?s=50">
       <h1>&nbsp;Immocitiz File Uploader</h1>
     </div>
-    <div class="border d-grid p-3 shadow">
+    <div class="bg-light border d-grid mb-3 p-3 shadow">
       <h6 id="title"></h6>
       <p class="mb-0" id="subtitle"></p>
       <hr>
-      <h6>Documents :</h6>
-      <div class="d-flex">
-        <div class="d-flex flex-column gap-3 p-3 w-25">
-          <div id="/Documents de vente/Documents copropriete"></div>
-          <lr-file-uploader-regular
-            css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
-            ctx-name="/Documents de vente/Documents copropriete/"
-            class="no-multiple-max"
-          ></lr-file-uploader-regular>
-        </div>
-        <div class="d-flex flex-column gap-3 p-3 w-25">
-          <div id="/Documents de vente/Documents opportunite"></div>
-          <lr-file-uploader-regular
-            css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
-            ctx-name="/Documents de vente/Documents opportunite/"
-            class="no-multiple-max"
-          ></lr-file-uploader-regular>
-        </div>
-      </div>
+      <h6 class="mb-3">Documents copropriété :</h6>
+      <lr-file-uploader-regular
+        css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
+        ctx-name="/Documents de vente/Documents copropriete/"
+        class="no-multiple-max"
+      ></lr-file-uploader-regular>
+      <div class="d-flex flex-wrap" id="/Documents de vente/Documents copropriete"></div>
+      <hr>
+      <h6 class="mb-3">Documents opportunité :</h6>
+      <lr-file-uploader-regular
+        css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
+        ctx-name="/Documents de vente/Documents opportunite/"
+        class="no-multiple-max"
+      ></lr-file-uploader-regular>
+      <div class="d-flex flex-wrap" id="/Documents de vente/Documents opportunite"></div>
       <hr>
       <h6>Visuels :</h6>
       <div class="d-flex flex-wrap">
-        <div class="d-flex flex-column gap-3 p-3 w-25">
+        <div class="d-flex flex-column gap-3 p-3 w-50">
           <div id="/Visuel 1"></div>
           <lr-file-uploader-regular
             css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
@@ -50,7 +46,7 @@
             class="multiple-max-1"
           ></lr-file-uploader-regular>
         </div>
-        <div class="d-flex flex-column gap-3 p-3 w-25">
+        <div class="d-flex flex-column gap-3 p-3 w-50">
           <div id="/Visuel 2"></div>
           <lr-file-uploader-regular
             css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
@@ -58,7 +54,7 @@
             class="multiple-max-1"
           ></lr-file-uploader-regular>
         </div>
-        <div class="d-flex flex-column gap-3 p-3 w-25">
+        <div class="d-flex flex-column gap-3 p-3 w-50">
           <div id="/Visuel 3"></div>
           <lr-file-uploader-regular
             css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
@@ -66,7 +62,7 @@
             class="multiple-max-1"
           ></lr-file-uploader-regular>
         </div>
-        <div class="d-flex flex-column gap-3 p-3 w-25">
+        <div class="d-flex flex-column gap-3 p-3 w-50">
           <div id="/Visuel 4"></div>
           <lr-file-uploader-regular
             css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
@@ -74,7 +70,7 @@
             class="multiple-max-1"
           ></lr-file-uploader-regular>
         </div>
-        <div class="d-flex flex-column gap-3 p-3 w-25">
+        <div class="d-flex flex-column gap-3 p-3 w-50">
           <div id="/Visuel 5"></div>
           <lr-file-uploader-regular
             css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
@@ -82,7 +78,7 @@
             class="multiple-max-1"
           ></lr-file-uploader-regular>
         </div>
-        <div class="d-flex flex-column gap-3 p-3 w-25">
+        <div class="d-flex flex-column gap-3 p-3 w-50">
           <div id="/Visuel 6"></div>
           <lr-file-uploader-regular
             css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
@@ -90,17 +86,15 @@
             class="multiple-max-1"
           ></lr-file-uploader-regular>
         </div>
-        <div class="d-flex flex-column gap-3 p-3 w-25">
-          <div id="Autre"></div>
-          <a>
-          <lr-file-uploader-regular
-            css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
-            ctx-name="/Autre/"
-            class="no-multiple-max"
-          ></lr-file-uploader-regular>
-          </a>
-        </div>
       </div>
+      <hr>
+      <h6 class="mb-3">Autres visuels :</h6>
+      <lr-file-uploader-regular
+        css-src="https://esm.sh/@uploadcare/blocks@0.21.7/web/file-uploader-regular.min.css"
+        ctx-name="/Autre/"
+        class="no-multiple-max"
+      ></lr-file-uploader-regular>
+      <div class="d-flex flex-wrap" id="Autre"></div>
     </div>
   </div>
 
@@ -135,22 +129,40 @@
             if (hits.hits) {
               hits.hits.forEach(hit => {
                 if (!hit._source.isDirectory) {
-                  console.log('ok');
+                  document.getElementById(id.replace('/Autre', 'Autre')).innerHTML  +=
+                    '<div class="p-3 w-25">' +
+                      '<div class="card">' +
+                        '<img class="card-img-top" src="https://immocitiz.sirv.com' + hit._source.filename + '?profile=visuel">' +
+                        '<div class="card-body d-flex align-items-center flex-wrap justify-content-between">' +
+                          '<p class="card-text">' + hit._source.basename + '</p>' +
+                          '<div class="btn-group">' +
+                            '<a class="btn btn-outline-secondary" href="https://immocitiz.sirv.com' + hit._source.filename + '" target="_blank">' +
+                              '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">' +
+                                '<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>' +
+                              '</svg>' +
+                            '</a>' +
+                            '<button class="btn btn-outline-secondary" onclick="deleteFile(\'https://immocitiz.sirv.com' + encodeURI(hit._source.filename) + '\');" type="button">' +
+                              '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">' +
+                                '<path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>' +
+                                '<path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>' +
+                              '</svg>' +
+                            '</buton>' +
+                          '</div>' +
+                        '</div>' +
+                      '</div>' +
+                    '</div>';
                 }
               });
             }
           });
       });
       [
-        '/Documents de vente/Documents copropriete',
-        '/Documents de vente/Documents opportunite',
         '/Visuel 1',
         '/Visuel 2',
         '/Visuel 3',
         '/Visuel 4',
         '/Visuel 5',
-        '/Visuel 6',
-        'Autre'
+        '/Visuel 6'
       ].forEach(id => {
         getVisuelUrl(id)
           .then(url => {
@@ -158,7 +170,7 @@
               document.getElementById(id).innerHTML =
                 '<div class="card">' +
                   '<img class="card-img-top" src="' + url + '">' +
-                  '<div class="card-body d-flex align-items-center justify-content-between">' +
+                  '<div class="card-body d-flex align-items-center flex-wrap justify-content-between">' +
                     '<p>' + id.split('/')[id.split('/').length - 1].replace('Visuel ', 'Visuel n°') + '</p>' +
                     '<div class="btn-group">' +
                       '<a class="btn btn-outline-secondary" href="' + url + '" target="_blank">' +
