@@ -1,0 +1,26 @@
+.multiple-max-1 {
+  --cfg-img-only: 1;
+  --cfg-max-local-file-size-bytes: 10485760;
+  --cfg-multiple: 0;
+  --cfg-multiple-max: 1;
+  --cfg-pubkey: "e2d5f890d44d15ce657b";
+  --cfg-source-list: "local, url, camera, dropbox, gdrive";
+  --cfg-use-cloud-image-editor: 1;
+  --darkmode: 0;
+  --h-accent: 210;
+  --l-accent: 43%;
+  --s-accent: 61%;
+}
+
+.no-multiple-max {
+  --cfg-img-only: 1;
+  --cfg-max-local-file-size-bytes: 10485760;
+  --cfg-multiple: 1;
+  --cfg-pubkey: "e2d5f890d44d15ce657b";
+  --cfg-source-list: "local, url, camera, dropbox, gdrive";
+  --cfg-use-cloud-image-editor: 1;
+  --darkmode: 0;
+  --h-accent: 210;
+  --l-accent: 43%;
+  --s-accent: 61%;
+}
