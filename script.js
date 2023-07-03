@@ -50,7 +50,10 @@ const deleteFile = fileUrl => {
 const getFiles = async id => {
   try {
     const SEARCH = await fetch('https://api.sirv.com/v2/files/search', {
-      body: JSON.stringify({ "query": "dirname:\\/" + product.d74428a0196cace86d45a83a9526935ffe7b2415.substring(29) + id  + " AND -dirname:\\/.Trash" }),
+      body: JSON.stringify({
+        "query": "dirname:\\/" + product.d74428a0196cace86d45a83a9526935ffe7b2415.substring(29) + id  + " AND -dirname:\\/.Trash",
+        "size": 100
+      }),
       headers: {
         'authorization': 'Bearer' + token,
         'content-type': 'application/json'
